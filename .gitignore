@@ -1,0 +1,92 @@
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Python bytecode, environments, tests and tooling
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+/config.ini
+*.local.ini
+
+# Logs and runtime output
+logs/
+*.log
+/token_response_times.csv
+locust_*.csv
+locust_*.html
+
+# Private/local knowledge bases and FAQ source data
+/rag_qa/data/*
+!/rag_qa/data/README.md
+/mysql_qa/data/*
+!/mysql_qa/data/README.md
+
+# Local model weights and training artifacts
+/rag_qa/models/*
+!/rag_qa/models/README.md
+/rag_qa/core/bert_query_classifier/
+/rag_qa/core/bert_outputs/
+/rag_qa/core/bert_results/
+/rag_qa/core/output/
+/rag_qa/core/bert_classification_output/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.onnx
+*.onnx_data
+
+# Docker persistence and local databases
+/docker/**/mysql_data/
+/docker/**/redis_data/
+/docker/**/milvus_data/
+/docker/**/etcd_data/
+/docker/**/minio_data/
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+*.sql.gz
+
+# Generated evaluation/performance artifacts
+/rag_qa/rag_assesment/ragas_evaluation_results.csv
+
+# Notebook outputs with local paths and copied tokenizer artifacts
+/notebooks/bert_models.ipynb
+/notebooks/demo_models.ipynb
+/notebooks/special_tokens_map.json
+/notebooks/tokenizer_config.json
+/notebooks/tokenizer.json
+/notebooks/vocab.txt
+.ipynb_checkpoints/
+
+# Archives and temporary files
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.tmp
+*.temp
+*.bak
+*.swp
